@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 553ee5859dd3c634cb9bb68d6b67b1fc, type: 3}
-  m_Name: MA40
+  m_Name: Weapons
   m_EditorClassIdentifier: 
-  Weapon_Obj: {fileID: 0}
-  Weapon_Sprite: {fileID: 0}
-  Dmg: 100
-  RMP: 50
-  Magazine: 12
-  Ammo_Max: 300
-  Element_Type: Kinetic
+  WeaponSprite: {fileID: 0}
+  Dmg: 0
+  RMP: 0
+  Magazine: 0
+  Ammo_Max: 0
+  Element_Type: 
