@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class Player_Weapon_Handle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Camera cam;
+    public GameObject PlayerCursor;
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+
         if(Input.GetMouseButtonDown(0))
         {
-
+            Shoot();
         }
+    }
+
+    public void Shoot()
+    {
+        Debug.Log("Shoot fired");
     }
 }

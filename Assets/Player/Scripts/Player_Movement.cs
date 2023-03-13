@@ -15,8 +15,8 @@ public class Player_Movement : MonoBehaviour
     private void Update()
     {
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        Debug.Log(direction.x);
-        Debug.Log(direction.y);
+        // Debug.Log(direction.x);
+        // Debug.Log(direction.y);
         AnimState();   
     }
 

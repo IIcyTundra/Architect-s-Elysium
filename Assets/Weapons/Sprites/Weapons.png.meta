@@ -69,7 +69,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hellwalker
+      name: Weapons_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0559ffffe7dc7fc44be4feacde738812
-      internalID: 476954455
+      spriteID: 76e447d86fbfaf54cbe82a2f85dfc643
+      internalID: -2006152183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MA40
+      name: Weapons_1
       rect:
         serializedVersion: 2
         x: 25
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 939924b3d3f315944ae8b5b42d6ebb7b
-      internalID: -127215618
+      spriteID: b5faf984bb884e9409fe3111bb421c61
+      internalID: 164917327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ION_CASTER
+      name: Weapons_2
       rect:
         serializedVersion: 2
         x: 57
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4edd1db320f362c4baa0879495cf5855
-      internalID: 1415103848
+      spriteID: 32b17ecdb832dc748b8a3fc87ffab98b
+      internalID: 1995973731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Durendal
+      name: Weapons_3
       rect:
         serializedVersion: 2
         x: 80
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16d556713ddc0f74cb62e29e6ff3eb70
-      internalID: 657418660
+      spriteID: dc70326d5645b0845a180fe6379782c5
+      internalID: -1660961898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damnation
+      name: Weapons_4
       rect:
         serializedVersion: 2
         x: 104
@@ -203,8 +203,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8e2971e85fc4ba4a821f5d1a90175be
-      internalID: -1817372719
+      spriteID: f3b481ec788b03b4eaa71dafbefce421
+      internalID: -309385623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 98
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bf4d1ab9e7f9c4c96d5b9356a2a11f
+      internalID: 611499705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4408aafba8eaf941af7788abd54585e
+      internalID: -201008946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 99
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31914374276b8904d971c50d333e69e9
+      internalID: -1003890273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 100
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83173ce97864dc14382551a377ab3a1b
+      internalID: 272906983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0dcf7bed1e8ba43bf54da6ddbc923e
+      internalID: -613659864
       vertices: []
       indices: 
       edges: []
@@ -220,11 +325,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hellwalker: 476954455
-      ION_CASTER: 1415103848
-      MA40: -127215618
-      Damnation: -1817372719
-      Durendal: 657418660
+      Weapons_8: -1003890273
+      Weapons_7: -201008946
+      Weapons_0: -2006152183
+      Weapons_6: 1003176187
+      Weapons_9: 272906983
+      Weapons_10: -613659864
+      Weapons_5: 611499705
+      Weapons_1: 164917327
+      Weapons_4: -309385623
+      Weapons_2: 1995973731
+      Weapons_3: -1660961898
+      Weapons_11: -1248975385
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
