@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 339782000}
   - component: {fileID: 339781999}
   - component: {fileID: 339781998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 663834164c6a04740aaa1b778249ce7e, type: 2}
+  - {fileID: 2100000, guid: 5e148de6cdf2d164aa3e3f90ce8c852c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -465,6 +465,10 @@ PrefabInstance:
     - target: {fileID: 559699041751470129, guid: 020dc0d26318f36439f213708d201f3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012652157649611528, guid: 020dc0d26318f36439f213708d201f3e, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3036569334254471187, guid: 020dc0d26318f36439f213708d201f3e, type: 3}
       propertyPath: m_Name
@@ -597,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318862150603068182, guid: 97e45387387c73e40a27741687ec0094, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97e45387387c73e40a27741687ec0094, type: 3}

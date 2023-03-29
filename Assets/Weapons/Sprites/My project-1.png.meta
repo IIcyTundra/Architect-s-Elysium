@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: My project-1_2
+      name: Fist_3
       rect:
         serializedVersion: 2
         x: 193
@@ -439,27 +439,6 @@ TextureImporter:
       bones: []
       spriteID: 1b779c2b57df1eb4bb791cd463671501
       internalID: -15765503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: My project-1_15
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 1832
-        width: 37
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45e3363e808510f47a99c0b44116ebe0
-      internalID: -1358058581
       vertices: []
       indices: 
       edges: []
@@ -3194,6 +3173,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: My project-1_0
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1829
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2650821b75a49a446aa156632dadc189
+      internalID: 1755296881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3207,6 +3207,8 @@ TextureImporter:
     nameFileIdTable:
       First_1: -1047428836
       Fist_0: 380081146
+      Fist_3: 544388412
+      My project-1_0: 1755296881
       My project-1_10: -233460905
       My project-1_100: 98217449
       My project-1_101: 1312237073
@@ -3282,7 +3284,6 @@ TextureImporter:
       My project-1_17: 2088746180
       My project-1_18: 70906895
       My project-1_19: 355655195
-      My project-1_2: 544388412
       My project-1_20: 1739770186
       My project-1_21: -1087512250
       My project-1_22: -1561840702
