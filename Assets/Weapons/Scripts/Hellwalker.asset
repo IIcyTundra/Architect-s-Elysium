@@ -12,10 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58b481743a42fb4ea7cd0b4741ea184, type: 3}
   m_Name: Hellwalker
   m_EditorClassIdentifier: 
-  HW_Obj: {fileID: 1841903884986178245, guid: da3405fa05404724b8a9a53c57747089, type: 3}
-  HW_Name: Hellwalker
-  HW_ID: 1
-  HW_Range: 5
-  HW_Ammo_Max: 40
-  HW_SpreadAngle: 10
-  HW_Radius: 10
+  shootSounds:
+  - {fileID: 8300000, guid: 9b47d006d5e61d24796d642f59e9816e, type: 3}
+  - {fileID: 8300000, guid: 5f83659124e3b5a44b0bd71cf3abc44f, type: 3}
+  - {fileID: 8300000, guid: acd41ddcc63cfdc4980146922cede53c, type: 3}
+  reloadSounds:
+  - {fileID: 8300000, guid: 8bc0cff7650f47740952b8231d2aadc8, type: 3}
+  - {fileID: 8300000, guid: 2081dd5d09df7b541bac1aad2c65f31e, type: 3}
+  - {fileID: 8300000, guid: 3820b184211ba714d96c4f983a3e6f25, type: 3}
+  - {fileID: 8300000, guid: 492808d2774ea1e4e982fc2c6fd622b5, type: 3}
+  - {fileID: 8300000, guid: 9549a8f02ca6d7144ac05defdffb06b8, type: 3}
+  - {fileID: 8300000, guid: f6b9ea9903abf9346adcd12e19fe66e4, type: 3}
+  - {fileID: 8300000, guid: 373ee3c300b79114d8f835522614e081, type: 3}
+  - {fileID: 8300000, guid: aa5f031abfbf3704fa0debf92e28abe5, type: 3}
+  Weapon_Obj: {fileID: 1841903884986178245, guid: da3405fa05404724b8a9a53c57747089, type: 3}
+  Weapon_Bullet: {fileID: 2552278129533104966, guid: 2d527109856d98945bb201c58e47c3b2, type: 3}
+  Weapon_Name: Hellwalker
+  Weapon_ID: 1
+  Weapon_Range: 5
+  Weapon_Ammo_Mag: 48
+  Weapon_DMG: 20
+  Weapon_Bull_Per_Tap: 8
+  FullAutoToggle: 0
+  Weapon_Spread: 0.1
+  Weapon_Reload_Speed: 1
+  Weapon_TBShots: 0
+  Weapon_TBShooting: 0.7
+  ShootForce: 100
+  UpwardForce: 0

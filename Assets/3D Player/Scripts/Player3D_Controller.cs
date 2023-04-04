@@ -4,54 +4,61 @@ using UnityEngine;
 
 public class Player3D_Controller : MonoBehaviour
 {
+    #region Player Variables
     [Header("Movement")]
-    public float moveSpeed;
-
-    public float groundDrag;
-
-    public float airMultiplier;
+    public Player_SO PlayerDataRef;
+    [SerializeField] bool CanJump;
     public Animator camAnim;
 
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
+    [Header("Keybinds")]
+    public KeyCode JumpKey = KeyCode.Space;
 
     [Header("Ground Check")]
-    public float playerHeight;
+    public float PlayerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
-    bool isWalking;
-
+    [SerializeField] bool grounded;
+    [SerializeField] bool isWalking;
+    
+    [Header("Misc")]
     public Transform orientation;
-
     float horizontalInput;
     float verticalInput;
-
-    Vector3 moveDirection;
-
+    Vector3 MoveDirection;
     Rigidbody rb;
+
+    [Header("Slope Handle")]
+    public float MaxSlopeAngle;
+    private RaycastHit SlopeTouched;
+
+    private bool LeaveSlope;
+    #endregion
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-
+        CanJump = true;
     }
 
     private void Update()
     {
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        //Check to see if we're touching the ground
+        grounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.8f, whatIsGround);
 
         MyInput();
         SpeedControl();
         WalkAnim();
+        JumpCheck();
         camAnim.SetBool(name: "isWalking", isWalking);
-
-        // handle drag
+        //Handle Player Drag and AnimCheck
         if (grounded)
-            rb.drag = groundDrag;
-        else
+        {
+            rb.drag = PlayerDataRef.GroundDrag;
+            
+        }
+        else{
             rb.drag = 0;
+        }
     }
 
     private void FixedUpdate()
@@ -66,35 +73,60 @@ public class Player3D_Controller : MonoBehaviour
 
     }
 
+    
+
+
+    #region Movement Functions
     private void MovePlayer()
     {
-        // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        //Move Dir
+        MoveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        // on ground
+        if(OnSlope())
+        {
+            rb.AddForce(GetSlopeDir() * PlayerDataRef.PlayerSpeed * 20f, ForceMode.Force);
+
+            if(rb.velocity.y > 0)
+                rb.AddForce(Vector3.down * 80f, ForceMode.Force);
+        }
+        //Check Ground
         if(grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(MoveDirection.normalized * PlayerDataRef.PlayerSpeed * 10f, ForceMode.Force);
 
-        // in air
+        //Check Air
         else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(MoveDirection.normalized * PlayerDataRef.PlayerSpeed * 10f * PlayerDataRef.AirMultiplier, ForceMode.Force);
+        
+        rb.useGravity = !OnSlope();
+    
+    
     }
 
     private void SpeedControl()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        // limit velocity if needed
-        if(flatVel.magnitude > moveSpeed)
+        //Slowdown Player On Slope
+        if(OnSlope() && !LeaveSlope)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            if(rb.velocity.magnitude > PlayerDataRef.PlayerSpeed)
+                rb.velocity = rb.velocity.normalized * PlayerDataRef.PlayerSpeed;
         }
+        else
+        {
+            Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            if(flatVel.magnitude > PlayerDataRef.PlayerSpeed)
+            {
+                Vector3 limitedVel = flatVel.normalized * PlayerDataRef.PlayerSpeed;
+                rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            }
+        }
+        
+
     }
 
     private void WalkAnim()
     {
-        if(moveDirection.magnitude > 0.1f)
+        if(MoveDirection.magnitude > 0.1f && grounded)
         {
             isWalking = true;
         }
@@ -103,4 +135,54 @@ public class Player3D_Controller : MonoBehaviour
             isWalking = false;
         }
     }
+
+    private void Jump()
+    {
+        LeaveSlope = true;
+        //Resets Y Velocity
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        rb.AddForce(transform.up * PlayerDataRef.JumpForce, ForceMode.Impulse);
+    }
+
+    private void ResetJump()
+    {
+        CanJump = true;
+        LeaveSlope = false;
+    }
+
+    
+    #endregion
+
+    #region Physics Check
+
+    private void JumpCheck()
+    {
+        if(Input.GetKey(JumpKey) && CanJump && grounded)
+        {
+            //Debug.Log("Jumping");
+            CanJump = false;
+            Jump();
+            Invoke(nameof(ResetJump),PlayerDataRef.JumpCooldown);
+        }
+    }
+
+    private bool OnSlope()
+    {
+        if(Physics.Raycast(transform.position, Vector3.down, out SlopeTouched, PlayerHeight * 0.8f))
+        {
+            float Angle = Vector3.Angle(Vector3.up, SlopeTouched.normal);
+            return Angle < MaxSlopeAngle && Angle !=0;
+        }
+
+        return false;
+    }
+
+    private Vector3 GetSlopeDir()
+    {
+        return  Vector3.ProjectOnPlane(MoveDirection, SlopeTouched.normal).normalized;
+    }
+
+    #endregion
+
 }

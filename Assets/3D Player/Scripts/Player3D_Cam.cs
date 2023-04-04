@@ -8,8 +8,8 @@ public class Player3D_Cam : MonoBehaviour
     public float sensY;
 
     public Transform orientation;
-    float xRotation;
-    float yRotation;
+    [HideInInspector]public float xRotation;
+    [HideInInspector]public float yRotation;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
