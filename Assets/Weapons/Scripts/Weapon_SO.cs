@@ -13,6 +13,7 @@ public class Weapon_SO : ScriptableObject
     public GameObject Weapon_Bullet;
     public GameObject Weapon_BHole;
     public GameObject MuzzleFlash;
+    [HideInInspector] public Camera PlayerCam;
     public string Weapon_Effect;
     public string Weapon_Name = "Hellwalker";
     public int Weapon_ID = 1; //ID in Weapon Dictionary
@@ -28,11 +29,4 @@ public class Weapon_SO : ScriptableObject
     public float ShootForce, UpwardForce;
 
     #endregion
-
-    
-
-    
-
-
-    
 }

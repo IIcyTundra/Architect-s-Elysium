@@ -27,6 +27,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: aa5f031abfbf3704fa0debf92e28abe5, type: 3}
   Weapon_Obj: {fileID: 1841903884986178245, guid: da3405fa05404724b8a9a53c57747089, type: 3}
   Weapon_Bullet: {fileID: 2552278129533104966, guid: 2d527109856d98945bb201c58e47c3b2, type: 3}
+  Weapon_BHole: {fileID: 1000013169864706, guid: e5a3d6da48298a0458c1990f58c27069, type: 3}
+  MuzzleFlash: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  PlayerCam: {fileID: 0}
+  Weapon_Effect: Incendiary
   Weapon_Name: Hellwalker
   Weapon_ID: 1
   Weapon_Range: 5
@@ -34,7 +38,7 @@ MonoBehaviour:
   Weapon_DMG: 20
   Weapon_Bull_Per_Tap: 8
   FullAutoToggle: 0
-  Weapon_Spread: 0.1
+  Weapon_Spread: 0.06
   Weapon_Reload_Speed: 1
   Weapon_TBShots: 0
   Weapon_TBShooting: 0.7

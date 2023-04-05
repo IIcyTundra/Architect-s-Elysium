@@ -9,24 +9,28 @@ public class HW_Handler : MonoBehaviour
     RaycastHit RayHit;
     int bulletsLeft, bulletsShot;
     bool shooting, readyToShoot, reloading, allowInvoke;
-    public LayerMask Enemy;
     public GameObject Weapon_AP;
-    public Camera PlayerCam;
-    public AudioSource audioSource;
-    public TextMeshProUGUI Ammo_Display;    
+    public AudioSource audioSource; 
+    public LayerMask Enemy; 
+    TextMeshProUGUI Ammo;
+  
     private void Awake()
     {
         bulletsLeft = Weapon_Ref.Weapon_Ammo_Mag;
         readyToShoot = true;
         audioSource = GetComponent<AudioSource>();
+        Weapon_Ref.PlayerCam = GetComponentInParent<Camera>();
+        Ammo = Component.FindObjectOfType<TextMeshProUGUI>();
     }
     
     private void Update()
     {
         MyInput();
         //SetText
-        Ammo_Display.SetText(bulletsLeft/Weapon_Ref.Weapon_Bull_Per_Tap + 
+
+        Ammo.SetText(bulletsLeft/Weapon_Ref.Weapon_Bull_Per_Tap + 
         "/" + Weapon_Ref.Weapon_Ammo_Mag/Weapon_Ref.Weapon_Bull_Per_Tap);
+        
     }
     private void MyInput()
     {
@@ -47,8 +51,8 @@ public class HW_Handler : MonoBehaviour
         audioSource.Stop();
         audioSource.clip = Weapon_Ref.shootSounds[Random.Range(0, Weapon_Ref.shootSounds.Length)];
         audioSource.Play();
-        if(Weapon_Ref.MuzzleFlash != null)
-            Instantiate(Weapon_Ref.MuzzleFlash, Weapon_AP.transform.position, Quaternion.identity);
+        
+        GameObject thisFlash = Instantiate(Weapon_Ref.MuzzleFlash, Weapon_AP.transform.position, Quaternion.identity);
 
         if (allowInvoke)
         {
@@ -56,7 +60,7 @@ public class HW_Handler : MonoBehaviour
             allowInvoke = false;
         }
        
-        //Debug.DrawRay(Weapon_Ref.PlayerCam.transform.position, Weapon_Ref.PlayerCam.transform.forward * Weapon_Ref.Weapon_Range, Color.green);
+        
         readyToShoot = false;
 
         
@@ -64,18 +68,21 @@ public class HW_Handler : MonoBehaviour
         //Spread
         float x = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
         float y = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
-        float z = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
 
-        Ray ray = PlayerCam.ViewportPointToRay(new Vector3(x,y,z));
-        Vector3 direction = PlayerCam.transform.forward + new Vector3(x,y,0);
+        //Ray ray = Weapon_Ref.PlayerCam.ViewportPointToRay(new Vector3(x,y,0));
+        Vector3 direction = Weapon_Ref.PlayerCam.transform.forward + new Vector3(x,y,0);
         //Check if we hit something
-        if (Physics.Raycast(ray, out RayHit, Weapon_Ref.Weapon_Range))
+        if (Physics.Raycast(Weapon_Ref.PlayerCam.transform.position, direction, out RayHit, Weapon_Ref.Weapon_Range))
         { 
-            if(RayHit.collider.CompareTag("Enemy"))
+            Debug.DrawRay(Weapon_Ref.PlayerCam.transform.position, direction * Weapon_Ref.Weapon_Range, Color.green);
+            Debug.Log(RayHit.collider);
+            if(RayHit.collider.tag == "Enemy")
+            {
                 RayHit.collider.GetComponent<EnemyBehavior>().TakeDamage(Weapon_Ref.Weapon_DMG, Weapon_Ref.Weapon_Effect);
-        }
+            }
 
-        Instantiate(Weapon_Ref.Weapon_BHole, RayHit.point, Quaternion.FromToRotation(direction, RayHit.normal));
+        }
+        //Instantiate(Weapon_Ref.Weapon_BHole, RayHit.point, Quaternion.FromToRotation(direction, RayHit.normal));
         
 
         bulletsLeft--;
@@ -85,6 +92,8 @@ public class HW_Handler : MonoBehaviour
 
         if(bulletsShot > 0 && bulletsLeft > 0)
         Invoke("Shoot", Weapon_Ref.Weapon_TBShots);
+
+        Destroy(thisFlash, 0.5f);
     }
 
     public void ResetShot()
@@ -108,6 +117,7 @@ public class HW_Handler : MonoBehaviour
     {
         while (bulletsLeft < Weapon_Ref.Weapon_Ammo_Mag)
         {
+            bulletsLeft += 8;
             if(audioSource != null)
             {
                 audioSource.PlayOneShot(Weapon_Ref.reloadSounds[Random.Range(0, 6)]);
@@ -115,7 +125,7 @@ public class HW_Handler : MonoBehaviour
 
             yield return new WaitForSeconds(reloadTime);
 
-            bulletsLeft += 8;
+            
         }
         
         ReloadFinished();

@@ -48,13 +48,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weapon_Ref: {fileID: 11400000, guid: 0ead38b00f214a246a40a6aa5b8c0368, type: 2}
-  Enemy:
-    serializedVersion: 2
-    m_Bits: 128
   Weapon_AP: {fileID: 7071359446634880583}
   PlayerCam: {fileID: 0}
   audioSource: {fileID: 4785681026913588907}
   Ammo_Display: {fileID: 0}
+  Enemy:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!82 &4785681026913588907
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

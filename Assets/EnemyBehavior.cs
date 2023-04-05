@@ -25,6 +25,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(effect.CompareTo("Incendiary") == 0)
         {
+            
             Health -= DMG;
             StartCoroutine(DMGOverTime(1));
         }
@@ -36,9 +37,10 @@ public class EnemyBehavior : MonoBehaviour
         while(Health != 0 && time != 10)
         {
             Health -=5;
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(1);
             time++;
-            Debug.Log(time);
+            Debug.Log(Health);
+
         }
         
 
