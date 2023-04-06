@@ -12,5 +12,6 @@ public class Player_SO : ScriptableObject
     public float JumpCooldown;
     public int Currency;
     public int Health;
+    public int WeaponChoice;
     
 }

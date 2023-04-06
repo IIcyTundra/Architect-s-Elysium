@@ -18,4 +18,5 @@ MonoBehaviour:
   JumpForce: 10
   JumpCooldown: 0.25
   Currency: 0
-  Health: 0
+  Health: 100
+  WeaponChoice: 1

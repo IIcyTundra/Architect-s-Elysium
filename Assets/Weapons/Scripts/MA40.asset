@@ -21,14 +21,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f4504c95b9741d740bab0727816efb86, type: 3}
   - {fileID: 8300000, guid: ae46fceae3514124c8a543c9496c05df, type: 3}
   Weapon_Obj: {fileID: 1400815416827297345, guid: 4de4be0291e32304f9b69643a69474b0, type: 3}
+  Weapon_Bullet: {fileID: 0}
+  Weapon_BHole: {fileID: 0}
+  MuzzleFlash: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  PlayerCam: {fileID: 0}
+  Weapon_Effect: Kinetic
   Weapon_Name: MA40
   Weapon_ID: 0
   Weapon_Range: 40
   Weapon_Ammo_Mag: 40
-  Weapon_DMG: 10
+  Weapon_DMG: 30
   Weapon_Bull_Per_Tap: 1
   FullAutoToggle: 1
-  Weapon_Spread: 0.2
-  Weapon_Reload_Speed: 1
+  Weapon_Spread: 0.01
+  Weapon_Reload_Speed: 0.8
   Weapon_TBShots: 0
-  Weapon_TBShooting: 0.15
+  Weapon_TBShooting: 0.1
+  ShootForce: 0
+  UpwardForce: 0

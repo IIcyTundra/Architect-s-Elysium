@@ -7,6 +7,12 @@ TagManager:
   - Weapon
   - IsNotGood
   - Enemy
+  - Ground
+  - Bullet
+  - AmmoText
+  - PlayerHealth
+  - MA40
+  - Hellwalker
   layers:
   - Default
   - TransparentFX
@@ -16,7 +22,7 @@ TagManager:
   - UI
   - Weapon
   - Enemy
-  - 
+  - Player
   - 
   - 
   - 

@@ -6,6 +6,7 @@ using System.Collections;
 public class HW_Handler : MonoBehaviour
 {
     public Weapon_SO Weapon_Ref;
+    public TextMeshProUGUI AmmoRef;
     RaycastHit RayHit;
     int bulletsLeft, bulletsShot;
     bool shooting, readyToShoot, reloading, allowInvoke;
@@ -20,7 +21,6 @@ public class HW_Handler : MonoBehaviour
         readyToShoot = true;
         audioSource = GetComponent<AudioSource>();
         Weapon_Ref.PlayerCam = GetComponentInParent<Camera>();
-        Ammo = Component.FindObjectOfType<TextMeshProUGUI>();
     }
     
     private void Update()
@@ -28,7 +28,7 @@ public class HW_Handler : MonoBehaviour
         MyInput();
         //SetText
 
-        Ammo.SetText(bulletsLeft/Weapon_Ref.Weapon_Bull_Per_Tap + 
+        AmmoRef.SetText(bulletsLeft/Weapon_Ref.Weapon_Bull_Per_Tap + 
         "/" + Weapon_Ref.Weapon_Ammo_Mag/Weapon_Ref.Weapon_Bull_Per_Tap);
         
     }
@@ -74,7 +74,7 @@ public class HW_Handler : MonoBehaviour
         //Check if we hit something
         if (Physics.Raycast(Weapon_Ref.PlayerCam.transform.position, direction, out RayHit, Weapon_Ref.Weapon_Range))
         { 
-            Debug.DrawRay(Weapon_Ref.PlayerCam.transform.position, direction * Weapon_Ref.Weapon_Range, Color.green);
+            //Debug.DrawRay(Weapon_Ref.PlayerCam.transform.position, direction * Weapon_Ref.Weapon_Range, Color.green);
             Debug.Log(RayHit.collider);
             if(RayHit.collider.tag == "Enemy")
             {

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player3D_Controller : MonoBehaviour
 {
@@ -31,6 +33,8 @@ public class Player3D_Controller : MonoBehaviour
     private RaycastHit SlopeTouched;
 
     private bool LeaveSlope;
+    public float CurrHealth;
+    public TextMeshProUGUI PlayerInfo;
     #endregion
 
     private void Start()
@@ -38,10 +42,12 @@ public class Player3D_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         CanJump = true;
+        CurrHealth = PlayerDataRef.Health;
     }
 
     private void Update()
     {
+        PlayerInfo.SetText(CurrHealth + "/" + PlayerDataRef.Health);
         //Check to see if we're touching the ground
         grounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.8f, whatIsGround);
 
@@ -49,6 +55,7 @@ public class Player3D_Controller : MonoBehaviour
         SpeedControl();
         WalkAnim();
         JumpCheck();
+        Death();
         camAnim.SetBool(name: "isWalking", isWalking);
         //Handle Player Drag and AnimCheck
         if (grounded)
@@ -185,4 +192,19 @@ public class Player3D_Controller : MonoBehaviour
 
     #endregion
 
+    public void Death()
+    {
+        if(CurrHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            CurrHealth -= 5;
+        }
+    }
 }

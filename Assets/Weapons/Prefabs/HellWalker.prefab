@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3742977975895990789
 Transform:
   m_ObjectHideFlags: 0
@@ -48,10 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weapon_Ref: {fileID: 11400000, guid: 0ead38b00f214a246a40a6aa5b8c0368, type: 2}
+  AmmoRef: {fileID: 7431173705499440008, guid: 238f49b571d47f34781384b3b30f0ae1, type: 3}
   Weapon_AP: {fileID: 7071359446634880583}
-  PlayerCam: {fileID: 0}
   audioSource: {fileID: 4785681026913588907}
-  Ammo_Display: {fileID: 0}
   Enemy:
     serializedVersion: 2
     m_Bits: 128
@@ -67,7 +66,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

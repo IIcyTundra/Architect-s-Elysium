@@ -48,13 +48,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weapon_Ref: {fileID: 11400000, guid: f486548fda4d5ca4fb0367da1a7a6bae, type: 2}
-  audioSource: {fileID: 0}
+  AmmoRef: {fileID: 7431173705499440008, guid: 238f49b571d47f34781384b3b30f0ae1, type: 3}
+  Weapon_AP: {fileID: 2172498302819416569}
+  audioSource: {fileID: 4344596490501177694}
   Enemy:
     serializedVersion: 2
     m_Bits: 128
-  Weapon_AP: {fileID: 2172498302819416569}
-  PlayerCam: {fileID: 0}
-  Ammo_Display: {fileID: 0}
 --- !u!82 &4344596490501177694
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67,7 +66,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.526
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -175,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2172498302819416569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.9}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

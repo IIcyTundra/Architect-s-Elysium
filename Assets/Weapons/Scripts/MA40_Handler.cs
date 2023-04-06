@@ -4,17 +4,15 @@ using TMPro;
 public class MA40_Handler : MonoBehaviour
 {
     public Weapon_SO Weapon_Ref;
+    public TextMeshProUGUI AmmoRef;
     RaycastHit RayHit;
-    public AudioSource audioSource;
     int bulletsLeft, bulletsShot;
-    //bools 
     bool shooting, readyToShoot, reloading, allowInvoke;
-    //Reference
-    public LayerMask Enemy;
     public GameObject Weapon_AP;
-    //public ParticleSystem MuzzleFlash;
-    public Camera PlayerCam;
-    public TextMeshProUGUI Ammo_Display;   
+    public AudioSource audioSource; 
+    public LayerMask Enemy; 
+    float zRotation;
+    TextMeshProUGUI Ammo; 
 
 
     private void Awake()
@@ -22,17 +20,18 @@ public class MA40_Handler : MonoBehaviour
         bulletsLeft = Weapon_Ref.Weapon_Ammo_Mag;
         readyToShoot = true;
 
-        audioSource.loop = false;
-        audioSource.playOnAwake = true;
+        audioSource = GetComponent<AudioSource>();
+        Weapon_Ref.PlayerCam = GetComponentInParent<Camera>();
+
     }
     
     private void Update()
     {
         MyInput();
-        
 
         //SetText
-        Ammo_Display.SetText(bulletsLeft + "/" + Weapon_Ref.Weapon_Ammo_Mag);
+        AmmoRef.SetText(bulletsLeft/Weapon_Ref.Weapon_Bull_Per_Tap + 
+        "/" + Weapon_Ref.Weapon_Ammo_Mag/Weapon_Ref.Weapon_Bull_Per_Tap);
     }
     private void MyInput()
     {
@@ -56,6 +55,13 @@ public class MA40_Handler : MonoBehaviour
         audioSource.clip = Weapon_Ref.shootSounds[Random.Range(0, Weapon_Ref.shootSounds.Length)];
         audioSource.Play();
 
+        //Spread
+        float x = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
+        float y = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
+        Vector3 direction = Weapon_Ref.PlayerCam.transform.forward + new Vector3(x,y,0);
+        GameObject thisFlash = Instantiate(Weapon_Ref.MuzzleFlash, Weapon_AP.transform.position,
+         Quaternion.Euler(Weapon_AP.transform.rotation.x,Weapon_AP.transform.rotation.y,Weapon_AP.transform.rotation.z));
+
         if (allowInvoke)
         {
             Invoke("ResetShot", Weapon_Ref.Weapon_TBShooting);
@@ -65,16 +71,16 @@ public class MA40_Handler : MonoBehaviour
         //Debug.DrawRay(Weapon_Ref.PlayerCam.transform.position, Weapon_Ref.PlayerCam.transform.forward * Weapon_Ref.Weapon_Range, Color.green);
         readyToShoot = false;
 
-        Ray ray = PlayerCam.ViewportPointToRay(new Vector3(0.5f,0.5f, 0));
+        //Check if we hit something
+        if (Physics.Raycast(Weapon_Ref.PlayerCam.transform.position, direction, out RayHit, Weapon_Ref.Weapon_Range))
+        { 
+            Debug.DrawRay(Weapon_Ref.PlayerCam.transform.position, direction * Weapon_Ref.Weapon_Range, Color.green);
+            //Debug.Log(RayHit.collider);
+            if(RayHit.collider.tag == "Enemy")
+            {
+                RayHit.collider.GetComponent<EnemyBehavior>().TakeDamage(Weapon_Ref.Weapon_DMG, Weapon_Ref.Weapon_Effect);
+            }
 
-        //Spread
-        float x = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
-        float y = Random.Range(-Weapon_Ref.Weapon_Spread, Weapon_Ref.Weapon_Spread);
-
-        //RayCast
-        if (Physics.Raycast(ray, out RayHit, Weapon_Ref.Weapon_Range))
-        {
-            
         }
 
         bulletsLeft--;
@@ -84,6 +90,8 @@ public class MA40_Handler : MonoBehaviour
 
         if(bulletsShot > 0 && bulletsLeft > 0)
         Invoke("Shoot", Weapon_Ref.Weapon_TBShots);
+
+        Destroy(thisFlash, 0.5f);
     }
 
     public void ResetShot()

@@ -35,11 +35,11 @@ MonoBehaviour:
   Weapon_ID: 1
   Weapon_Range: 5
   Weapon_Ammo_Mag: 48
-  Weapon_DMG: 20
-  Weapon_Bull_Per_Tap: 8
+  Weapon_DMG: 25
+  Weapon_Bull_Per_Tap: 7
   FullAutoToggle: 0
-  Weapon_Spread: 0.06
-  Weapon_Reload_Speed: 1
+  Weapon_Spread: 0.1
+  Weapon_Reload_Speed: 0.5
   Weapon_TBShots: 0
   Weapon_TBShooting: 0.7
   ShootForce: 100
