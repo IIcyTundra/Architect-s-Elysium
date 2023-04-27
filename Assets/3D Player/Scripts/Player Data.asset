@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 372ed4a06dbd6b54096bc9cb5667e39c, type: 3}
   m_Name: Player Data
   m_EditorClassIdentifier: 
-  PlayerSpeed: 10
-  GroundDrag: 5
+  PlayerSpeed: 6
+  PlayerWalkSpeed: 6
+  PlayerCrouchSpeed: 3
+  PlayerSlideSpeed: 20
+  NeededMoveSpeed: 6
+  PrevMoveSpeed: 6
+  SPDMULT: 1.5
+  SLPMULT: 2.5
+  GroundDrag: 4
   AirMultiplier: 0.4
   JumpForce: 10
   JumpCooldown: 0.25
-  Currency: 0
+  MState: 0
   Health: 100
-  WeaponChoice: 1
+  Currency: 0

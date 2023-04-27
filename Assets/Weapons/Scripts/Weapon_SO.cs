@@ -1,32 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 [CreateAssetMenu(fileName = "Weapon Base", menuName = "Create Scriptable Object/Weapon")]
 public class Weapon_SO : ScriptableObject
 {
 
     #region Variables
-    public AudioClip[] shootSounds;
-    public AudioClip[] reloadSounds;
-    public GameObject Weapon_Obj;
-    public GameObject Weapon_Bullet;
-    public GameObject Weapon_BHole;
-    public GameObject MuzzleFlash;
-    [HideInInspector] public Camera PlayerCam;
-    public string Weapon_Effect;
-    public string Weapon_Name = "Hellwalker";
-    public int Weapon_ID = 1; //ID in Weapon Dictionary
-    public float Weapon_Range = 5f;
-    public int Weapon_Ammo_Mag = 48; //Max ammo in mag 
-    public float Weapon_DMG = 20; //This is PER BULLET
-    public int Weapon_Bull_Per_Tap = 8; 
-    public bool FullAutoToggle;
-    public float Weapon_Spread = 0.4f; //Bullet Spread
-    public float Weapon_Reload_Speed = 1f;
-    public float Weapon_TBShots = 0.2f; //Time Between Each Shot
-    public float Weapon_TBShooting = 0.2f;
-    public float ShootForce, UpwardForce;
+
+    //Weapon Image
+    public Sprite W_Sprite;
+
+    //Weapon Audio
+    public AudioClip[] shootSounds, reloadSounds;
+
+    //All related prefabs to the Weapon
+    public GameObject W_Obj, W_Bullet, MuzzleFlash;
+
+    //String info (Name and Elemental Type)
+    public string W_Effect, W_Name; 
+
+    //ID in weapon dictionary
+    public int W_ID; 
+
+    //Weapon stats
+    [Range(0.0f, 1.0f)] public float W_Spread;
+    public float W_Range, W_DMG, W_Reload_Speed;
+    public float W_TBShots, W_TBShooting; 
+    public int W_BPT; 
+    public int Ammo_Added;
+    public int W_Ammo_Mag, W_Ammo_Capacity; //Max ammo in mag and the total ammount of ammo it can carry
+    
+    public bool FullAutoToggle; //If we can full auto or not
+    public float ShootForce, UpwardForce; //For projectile rounds;
+    public float RecoilForce;
+
 
     #endregion
 }
