@@ -14,9 +14,9 @@ public class Weapon_SO : ScriptableObject
     public AudioClip[] shootSounds, reloadSounds;
 
     //All related prefabs to the Weapon
-    public GameObject W_Obj, W_Bullet, MuzzleFlash;
+    public GameObject W_Obj;
 
-    //String info (Name and Elemental Type)
+    //String info (Name and Elemental Type)--
     public string W_Effect, W_Name; 
 
     //ID in weapon dictionary

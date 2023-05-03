@@ -13,25 +13,24 @@ MonoBehaviour:
   m_Name: Durendal
   m_EditorClassIdentifier: 
   W_Sprite: {fileID: -1660961898, guid: 34f4446160f191a45a8d899b86ce326b, type: 3}
-  shootSounds: []
+  shootSounds:
+  - {fileID: 8300000, guid: 61f59ac0ab73e9c4d903981f76b55471, type: 3}
   reloadSounds: []
   W_Obj: {fileID: 1400815416827297345, guid: 3ab37268b032d6749a21ba818fa099ca, type: 3}
-  W_Bullet: {fileID: 6017489706549742956, guid: cb87a4a95145bb444a64d5e8fae74186, type: 3}
-  MuzzleFlash: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
   W_Effect: Kinetic
   W_Name: Durendal
   W_ID: 3
-  W_Spread: 0
+  W_Spread: 0.1
   W_Range: 80
   W_DMG: 60
   W_Reload_Speed: 0.4
   W_TBShots: 0
-  W_TBShooting: 0.1
+  W_TBShooting: 0.4
   W_BPT: 1
   Ammo_Added: 0
   W_Ammo_Mag: 12
   W_Ammo_Capacity: 128
   FullAutoToggle: 0
-  ShootForce: 500
+  ShootForce: 100
   UpwardForce: 0
-  RecoilForce: 5
+  RecoilForce: 0

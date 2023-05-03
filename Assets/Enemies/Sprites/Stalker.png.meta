@@ -1,0 +1,1753 @@
+fileFormatVersion: 2
+guid: ee566e3c2286bf148a1dfbe5743f97e5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stalker_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 792
+        width: 92
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7844ffd3ecc4e2f4587ef0f3163aaf72
+      internalID: -993736731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 792
+        width: 80
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cea7658d5c05fb428149e02b28bd077
+      internalID: 249161390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 792
+        width: 39
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24d806e85d3e424ab3e0b1b043f4060
+      internalID: 1112306140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 792
+        width: 77
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75062a196448aff4db96941004dc0297
+      internalID: 1037684772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 792
+        width: 93
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c2bbb19034ddd4f842bc8b8e39cad1
+      internalID: 281704205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 793
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab8fa3e1971ec949aee303f30902a69
+      internalID: 1428581831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_6
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 793
+        width: 80
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b930ebfe53324c42af6318b3df0a3b5
+      internalID: -40447138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_7
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 793
+        width: 47
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49934907cc3088c42b281a3833c74c3c
+      internalID: -1585026463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_8
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 793
+        width: 76
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cd1b1398240f84daa22f9b61ead95d
+      internalID: 1022992193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_9
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 793
+        width: 93
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342be32836eea29469ec7b5a52d4e707
+      internalID: 217013407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 635
+        width: 81
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc8266e38b63ed42a95f3692067c486
+      internalID: 543558963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 635
+        width: 76
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87f0ec947dd94b4e984c7a8025fb36e
+      internalID: 2134029566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 635
+        width: 84
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c69f7e00d250b498da5a0850842678
+      internalID: 21950537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_13
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 635
+        width: 76
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bad0414dcb22e740aad16cf8ff8efbb
+      internalID: 1434877672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_14
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 636
+        width: 79
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1a17ff7db8a3440a242aa62390ee52
+      internalID: -1440017073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_15
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 636
+        width: 89
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e451294f7b4d946869ff7e38eb32da
+      internalID: -383015788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 636
+        width: 92
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b747b771e280f49971a354a2baec47
+      internalID: 1896263876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_17
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 636
+        width: 86
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b52af5651a61244ab3d758fbfc02240
+      internalID: 939682615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 492
+        width: 116
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a1048b57d4cff40a6b6d02a21246f8
+      internalID: 1610689058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 492
+        width: 86
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68b6cb328faa1447add0cf8d4e031ca
+      internalID: 838274767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_20
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 492
+        width: 112
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25859eb791ea71143a06735dbd9bace2
+      internalID: 173671167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_21
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 492
+        width: 89
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908ba5a511b07ab41a652d959f97e2c2
+      internalID: -1419213112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_22
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 496
+        width: 90
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2f0efd7b647ef4ab3bc331660263c5
+      internalID: 7244428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_23
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 496
+        width: 83
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065535beb136a8846922ce78aba38f23
+      internalID: 43907503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_24
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 496
+        width: 81
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c79d27bf0968734ab7bb237c6051a61
+      internalID: -1746979766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_25
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 496
+        width: 99
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c1b96b40a12784c87a3bedf37adf9c
+      internalID: -1954522632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 340
+        width: 86
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c31cbf6468d7741970896c05893218
+      internalID: 1783770501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_27
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 340
+        width: 82
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1681527e65f715e4f8cbe9ba33fd2deb
+      internalID: 1903253251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_28
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 340
+        width: 86
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876188721159a2a41af7f5ecfac7f295
+      internalID: -1365701653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_29
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 340
+        width: 83
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8cabf5905f7404a8a6c88c6cfcf158
+      internalID: 383748874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_30
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 323
+        width: 96
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b1094edb1f6b04aa70b29548d3d92b
+      internalID: 1866300442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_31
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 471
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce770a9e13712db49897122681708fe7
+      internalID: 1766645496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_32
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 325
+        width: 108
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f295bf0a75477844a076546057dab5f
+      internalID: -90994284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 187
+        width: 116
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ab6bb75961d874dadc45079c9a6b88
+      internalID: 1184388528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 179
+        width: 119
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731d1fcec9321ec4bb723357af7007cc
+      internalID: -474469270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_35
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 248
+        width: 72
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1216e254f0057e242bbb93668ed04654
+      internalID: 783274624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_36
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 273
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba8c5538d0c84841946ffd2379b5af1
+      internalID: 1361920007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 250
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e674b1ef356e09140ae90dbd7211d633
+      internalID: 141160458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_38
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 263
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f819f64733cee429028fe372deb288
+      internalID: -1875891302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_39
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 179
+        width: 128
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe578f4c10999f4c8f257c61f6f3dd7
+      internalID: 361452815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_40
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 258
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db39f05485768e549b69e6c903edf2c4
+      internalID: -1856390444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_41
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 252
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02bc3799d4de274a97b4d5e79597764
+      internalID: 1556683747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_42
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 236
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1003e2979adc0764a8dda012e5554179
+      internalID: -2080357736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_43
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 179
+        width: 128
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b68cbd4df3b5eb4aae29b03503d471b
+      internalID: -2137309951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_44
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 221
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4e98e9c2ab15c4bbe6250c4c11a8ac
+      internalID: 742177024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_45
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 218
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4771f54008040ec4ab181914fe786b06
+      internalID: 1937680953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_46
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 179
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4df5372b7ff70488d8739e248520c8
+      internalID: -838957363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_47
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 180
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3214c8b39990ce64ca39bf0cf9217c27
+      internalID: 1932234109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_48
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 182
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe4a57648b2fee48a14ae8b150f7142
+      internalID: 108541072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_49
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 179
+        width: 123
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0a50485cfa7414a96afcd0adbb840e
+      internalID: 1269951890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_50
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 14
+        width: 100
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4665207d93345f84d8d4fbcf68414be8
+      internalID: 229183474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_51
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 144
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89d24cea8ab5a3479c0221ac7f00108
+      internalID: -620195002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_52
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 140
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b958c77554cfa454f9159fd9804c19a0
+      internalID: 563067361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_53
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 143
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7f7a41a2c405d40933f5f4fa242916
+      internalID: -75055576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 141
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c5152146145f640b89e69900161510
+      internalID: 483471924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_55
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 110
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8deb42ec88351d4984251e27d4629f8
+      internalID: 941832936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_56
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 107
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591c257670d3f4d40850105ff1cf47d9
+      internalID: -5102823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_57
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 100
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7305ac8d7e04a24f9d415b324a09249
+      internalID: -2054128553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_58
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 118
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04aa8601da96f041b6a027b1fc0a75a
+      internalID: -1061199095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_59
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 116
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badcc235af761a74a8b29ef022df3a35
+      internalID: 82247357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_60
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 116
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c73a2e3674cad438fe896fe7150b01
+      internalID: 1159525966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_61
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 116
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bba5d7e4f99bf4f85036096e9f6d2d
+      internalID: 1459790552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_62
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 117
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91969d0755e8264d95f98117b15a4f2
+      internalID: 53054306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_63
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 115
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6456aa54310ca7243bdf53623b3cc285
+      internalID: -795171343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_64
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 119
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c48c98e4665eae4f908ffd6b1cd4864
+      internalID: -1068701374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_65
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 14
+        width: 94
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3128a50cb8c63064f9d29d98d0e63bf6
+      internalID: -693926214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_66
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 103
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ab2f3f9f8b64e4bba13ac68ecc9e3d
+      internalID: 1420897993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_67
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 14
+        width: 100
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575211b12945bc14584495b74460aa55
+      internalID: 904309214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_68
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 75
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4370f6abcb85342a8cb51c9aaf4b71
+      internalID: -1558216758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_69
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 59
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5124d626e57b6484382c5448998132d2
+      internalID: -1134127591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_70
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 14
+        width: 116
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad300cc55d69dc4081653ba65026b2e
+      internalID: -91556373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_71
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 43
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc5aad40dd919a448ff288b1a8d28ed
+      internalID: -1301895980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalker_72
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 38
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147dc3c4987cb7f4c8b476ba04af1b7b
+      internalID: 120367320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Stalker_0: -993736731
+      Stalker_1: 249161390
+      Stalker_10: 543558963
+      Stalker_11: 2134029566
+      Stalker_12: 21950537
+      Stalker_13: 1434877672
+      Stalker_14: -1440017073
+      Stalker_15: -383015788
+      Stalker_16: 1896263876
+      Stalker_17: 939682615
+      Stalker_18: 1610689058
+      Stalker_19: 838274767
+      Stalker_2: 1112306140
+      Stalker_20: 173671167
+      Stalker_21: -1419213112
+      Stalker_22: 7244428
+      Stalker_23: 43907503
+      Stalker_24: -1746979766
+      Stalker_25: -1954522632
+      Stalker_26: 1783770501
+      Stalker_27: 1903253251
+      Stalker_28: -1365701653
+      Stalker_29: 383748874
+      Stalker_3: 1037684772
+      Stalker_30: 1866300442
+      Stalker_31: 1766645496
+      Stalker_32: -90994284
+      Stalker_33: 1184388528
+      Stalker_34: -474469270
+      Stalker_35: 783274624
+      Stalker_36: 1361920007
+      Stalker_37: 141160458
+      Stalker_38: -1875891302
+      Stalker_39: 361452815
+      Stalker_4: 281704205
+      Stalker_40: -1856390444
+      Stalker_41: 1556683747
+      Stalker_42: -2080357736
+      Stalker_43: -2137309951
+      Stalker_44: 742177024
+      Stalker_45: 1937680953
+      Stalker_46: -838957363
+      Stalker_47: 1932234109
+      Stalker_48: 108541072
+      Stalker_49: 1269951890
+      Stalker_5: 1428581831
+      Stalker_50: 229183474
+      Stalker_51: -620195002
+      Stalker_52: 563067361
+      Stalker_53: -75055576
+      Stalker_54: 483471924
+      Stalker_55: 941832936
+      Stalker_56: -5102823
+      Stalker_57: -2054128553
+      Stalker_58: -1061199095
+      Stalker_59: 82247357
+      Stalker_6: -40447138
+      Stalker_60: 1159525966
+      Stalker_61: 1459790552
+      Stalker_62: 53054306
+      Stalker_63: -795171343
+      Stalker_64: -1068701374
+      Stalker_65: -693926214
+      Stalker_66: 1420897993
+      Stalker_67: 904309214
+      Stalker_68: -1558216758
+      Stalker_69: -1134127591
+      Stalker_7: -1585026463
+      Stalker_70: -91556373
+      Stalker_71: -1301895980
+      Stalker_72: 120367320
+      Stalker_8: 1022992193
+      Stalker_9: 217013407
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

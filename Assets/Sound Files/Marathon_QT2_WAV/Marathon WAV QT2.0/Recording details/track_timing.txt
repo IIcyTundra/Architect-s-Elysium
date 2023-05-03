@@ -1,0 +1,20 @@
+Timing info on original movies, as reported by QuickTime Player 7:
+
+00 AliensAgain 2:08.10
+01 Chomber 2:28.00
+02 Fat Man 1:29.41
+03 Flippant 1:19.56
+04 Flowers In Heaven 2:41.00
+05 Freedom 2:06.17
+06 Guardians 1:37.02
+07 Landing 3:14.65
+08 Leela 3:30.93
+09 New Pacific 1:36.99
+10 New Pacific (Reprise) 3:04.39
+11 Rapture 1:45.82
+12 Rushing 1:58.77
+13 Splash (Marathon) 5:46.92
+14 Swirls 2:29.80
+15 What About Bob? 2:55.79
+
+Total time: 40:13.42

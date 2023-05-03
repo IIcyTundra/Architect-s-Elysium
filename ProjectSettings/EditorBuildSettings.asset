@@ -5,17 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: d8ae5d35be9bebc4db58d8a971fa08ec
   - enabled: 1
     path: Assets/Scenes/TitleMenu.unity
     guid: be88bb4d172ff594cb8376ec6f427662
   - enabled: 1
     path: Assets/Scenes/Etymology.unity
     guid: 50531da1bf091fe479aee15504758be5
-  - enabled: 0
-    path: Assets/Scenes/Weapon Menu.unity
-    guid: dbdb67bfb71984f40880b1e8a58aba1b
+  - enabled: 1
+    path: Assets/Scenes/Rampancy.unity
+    guid: ae4430a601a12ae4aa59400e5b24e224
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: abfead90c935a3343bfc79e3eb9c4817, type: 2}
