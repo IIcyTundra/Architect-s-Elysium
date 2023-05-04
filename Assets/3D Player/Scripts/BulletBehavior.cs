@@ -50,7 +50,7 @@ public class BulletBehavior : MonoBehaviour
 
     static public GameObject GiveObj(int numElement)
     {
-        Debug.Log(numberObjects.Length);
+        //Debug.Log(numberObjects.Length);
         for (int i = 0; i < numberObjects[numElement]; i++) if (!stObjects[numElement][i].activeSelf) return stObjects[numElement][i];
 
         Debug.Log("Objects in the pool are over!");

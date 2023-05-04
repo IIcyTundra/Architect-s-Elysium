@@ -22,7 +22,7 @@ MonoBehaviour:
   W_Effect: Kinetic
   W_Name: MR45
   W_ID: 0
-  W_Spread: 0.735
+  W_Spread: 0.4
   W_Range: 100
   W_DMG: 80
   W_Reload_Speed: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   W_BPT: 1
   Ammo_Added: 0
   W_Ammo_Mag: 0
-  W_Ammo_Capacity: 420
+  W_Ammo_Capacity: 315
   FullAutoToggle: 1
   ShootForce: 100
   UpwardForce: 0

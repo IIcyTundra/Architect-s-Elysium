@@ -14,6 +14,11 @@ TagManager:
   - MA40
   - Hellwalker
   - AttachParent
+  - PowerUp
+  - Teleporter
+  - SecondTeleporter
+  - ThirdTeleporter
+  - FourthTeleporter
   layers:
   - Default
   - TransparentFX

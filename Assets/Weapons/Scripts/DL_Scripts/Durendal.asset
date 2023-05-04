@@ -22,7 +22,7 @@ MonoBehaviour:
   W_ID: 3
   W_Spread: 0.1
   W_Range: 80
-  W_DMG: 60
+  W_DMG: 100
   W_Reload_Speed: 0.4
   W_TBShots: 0
   W_TBShooting: 0.4

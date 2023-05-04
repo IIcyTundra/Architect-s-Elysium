@@ -42,7 +42,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5399283539799810778}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7039bd8a1285a9e43960b46e25ac967f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Agent: {fileID: 5399283539799810768}
-  player: {fileID: 5802909885227727822, guid: 25d0a065d80a6b84394888af14e9c0c0, type: 3}
+  player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -77,6 +77,8 @@ MonoBehaviour:
   AttackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
+  BulletSpeed: 0
+  EName: 
   projectile: {fileID: 6017489706549742956, guid: cb87a4a95145bb444a64d5e8fae74186, type: 3}
 --- !u!195 &5399283539799810768
 NavMeshAgent:

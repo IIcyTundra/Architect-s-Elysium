@@ -15,9 +15,9 @@ public class SettingsConfig : MonoBehaviour
         if(PlayerPrefs.GetInt("set first time volume") == 0){
             PlayerPrefs.SetInt("set first time volume",1);
             Debug.Log("Check");
-            Master.value = .25f;
-            Music.value = .25f;
-            SFX.value = .25f;
+            Master.value = .5f;
+            Music.value = .5f;
+            SFX.value = .5f;
         }else{
             Master.value = PlayerPrefs.GetFloat("MasterVolume");
             Music.value = PlayerPrefs.GetFloat("MusicVolume");

@@ -16,13 +16,16 @@ public class EnemyBehavior : MonoBehaviour
     bool JustAttacked;
     public float SightRange, AttackRange;
     public bool playerInSightRange, playerInAttackRange;
+    public float BulletSpeed;
+    public string EName;
 
     public GameObject projectile;
 
     // Start is called before the first frame update
-    void awake()
+    void Start()
     {
-        player = GameObject.Find("Player").transform;
+        //player = GameObject.Find("Player").GetComponent<Transform>();
+        
         Agent = GetComponent<NavMeshAgent>();
     }
 
@@ -38,10 +41,6 @@ public class EnemyBehavior : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
 
-        if(Health <= 0)
-        {
-            DestroyEnemy();
-        }
     }
 
     private void Patroling()
@@ -81,11 +80,19 @@ public class EnemyBehavior : MonoBehaviour
 
         transform.LookAt(player);
 
+        //Debug.Log(player.position);
+
         if (!JustAttacked)
         {
             ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 20f, ForceMode.Impulse);
+            GB();
+
+            projectile.transform.SetPositionAndRotation(transform.position, Quaternion.identity);
+
+            Rigidbody rb = projectile.GetComponent<Rigidbody>();
+            
+            //projectile.transform.parent = null;
+            rb.velocity = transform.forward * BulletSpeed;
             rb.AddForce(transform.up * 0f, ForceMode.Impulse);
             ///End of attack code
 
@@ -99,6 +106,7 @@ public class EnemyBehavior : MonoBehaviour
     }
     private void DestroyEnemy()
     {
+        //change to add back to object pool
         Destroy(gameObject);
     }
 
@@ -113,10 +121,16 @@ public class EnemyBehavior : MonoBehaviour
     public void TakeDamage(float DMG, string effect)
     {
         Health -= DMG;
-        Debug.Log(Health);
+        //Debug.Log(Health);
         if(effect.CompareTo("Incendiary") == 0)
         {
             StartCoroutine(DMGOverTime(1));
+        }
+
+        if(Health <= 0)
+        {
+            
+            DestroyEnemy();
         }
         
     }
@@ -128,12 +142,44 @@ public class EnemyBehavior : MonoBehaviour
             Health -=5;
             yield return new WaitForSeconds(1);
             time++;
-            Debug.Log(Health);
+            //Debug.Log(Health);
 
         }
-        
+    
+    }
 
-        
+    public void GB()
+    {
+        if(EName == "Standard")
+        {
+            //Debug.Log("true");
+            projectile = BulletBehavior.GiveObj(1);
+            if (projectile != null)
+            {
+                projectile.transform.SetPositionAndRotation(transform.position, transform.rotation);
+                projectile.SetActive(true);
+            }
+        }
+
+        if(EName == "Compiler")
+        {
+            projectile = BulletBehavior.GiveObj(2);
+            if (projectile != null)
+            {
+                projectile.transform.SetPositionAndRotation(transform.position, transform.rotation);
+                projectile.SetActive(true);
+            }
+        }
+
+        if(EName == "Stalker")
+        {
+            projectile = BulletBehavior.GiveObj(3);
+            if (projectile != null)
+            {
+                projectile.transform.SetPositionAndRotation(transform.position, transform.rotation);
+                projectile.SetActive(true);
+            }
+        }
     }
 
     

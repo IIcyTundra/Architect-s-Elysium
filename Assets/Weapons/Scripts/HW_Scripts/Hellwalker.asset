@@ -21,16 +21,16 @@ MonoBehaviour:
   W_Effect: Incendiary
   W_Name: Hellwalker
   W_ID: 1
-  W_Spread: 0.4
+  W_Spread: 0.2
   W_Range: 8
-  W_DMG: 25
+  W_DMG: 30
   W_Reload_Speed: 1
   W_TBShots: 0
   W_TBShooting: 0.5
   W_BPT: 7
   Ammo_Added: 0
   W_Ammo_Mag: 42
-  W_Ammo_Capacity: 196
+  W_Ammo_Capacity: 210
   FullAutoToggle: 0
   ShootForce: 100
   UpwardForce: 0

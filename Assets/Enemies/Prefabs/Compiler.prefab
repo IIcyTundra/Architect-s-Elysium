@@ -31,6 +31,22 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3211667090517214884, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: ObjectsList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211667090517214884, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: ObjectsList.Array.data[0].obj
+      value: 
+      objectReference: {fileID: 4656180740647972456}
+    - target: {fileID: 3211667090517214884, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: ObjectsList.Array.data[0].numberObjects
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399283539799810768, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810778, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: m_Name
       value: Compiler
@@ -38,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 5399283539799810778, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: EName
+      value: Compiler
       objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: Health
@@ -50,7 +70,11 @@ PrefabInstance:
     - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 2552278129533104966, guid: 2d527109856d98945bb201c58e47c3b2, type: 3}
+      objectReference: {fileID: 6017489706549742956, guid: e71085a4e92e92a43a9967a8805cdb1b, type: 3}
+    - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: BulletSpeed
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: TimePerAttack
       value: 3
@@ -61,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810780, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: m_Height
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810780, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: m_Radius
@@ -136,3 +160,8 @@ PrefabInstance:
     - {fileID: 3654050118545932633, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
     - {fileID: 6394130658024596803, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+--- !u!1 &4656180740647972456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5399283539799810778, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+  m_PrefabInstance: {fileID: 752110427906231474}
+  m_PrefabAsset: {fileID: 0}

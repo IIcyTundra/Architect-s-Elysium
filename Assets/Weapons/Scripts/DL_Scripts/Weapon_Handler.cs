@@ -48,7 +48,7 @@ public class Weapon_Handler : MonoBehaviour
         if (W_Ref.FullAutoToggle) shooting = Input.GetKey(KeyCode.Mouse0);
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if (RTS && shooting && BulletsLeft > 0)
+        if (RTS && shooting && W_Ref.W_Ammo_Capacity > 0)
         {
             BulletsShot = 0;
 
@@ -147,13 +147,6 @@ public class Weapon_Handler : MonoBehaviour
             W_Bullet.transform.SetPositionAndRotation(transform.position, transform.rotation);
             W_Bullet.SetActive(true);
             W_Bullet.GetComponent<BulletMechanics>().ApplyEffect(W_Ref.W_DMG, W_Ref.W_Effect);
-        }
-
-        W_MuzzleFlash = BulletBehavior.GiveObj(1);
-        if (W_MuzzleFlash != null)
-        {
-            W_MuzzleFlash.transform.SetPositionAndRotation(transform.position, transform.rotation);
-            W_MuzzleFlash.SetActive(true);
         }
 
     }

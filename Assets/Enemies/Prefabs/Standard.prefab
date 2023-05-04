@@ -23,6 +23,18 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3211667090517214884, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: ObjectsList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211667090517214884, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: ObjectsList.Array.data[0].obj
+      value: 
+      objectReference: {fileID: 6017489706549742956, guid: cb87a4a95145bb444a64d5e8fae74186, type: 3}
+    - target: {fileID: 3211667090517214884, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: ObjectsList.Array.data[0].numberObjects
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810778, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: m_Name
       value: Standard
@@ -32,12 +44,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: EName
+      value: Standard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: SightRange
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: AttackRange
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399283539799810779, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: BulletSpeed
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5399283539799810783, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
       propertyPath: m_RootOrder
@@ -83,5 +103,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7155524635680565917, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b1f718c9765d3ca4d93006497c996f14, type: 3}
+    - target: {fileID: 7155524635680565917, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2385133963322677034, guid: d7606635f871b0e42b40f3595f7ebe84, type: 2}
+    m_RemovedComponents:
+    - {fileID: 7155524635680565917, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 986dcc858d4a53043b527b47a38b4365, type: 3}

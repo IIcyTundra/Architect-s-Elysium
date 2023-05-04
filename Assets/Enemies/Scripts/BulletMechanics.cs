@@ -9,7 +9,7 @@ public class BulletMechanics : MonoBehaviour
     private SphereCollider SC;
 
     
-    public void Awake()
+    void Awake()
     {
         
         StartCoroutine(GetRidOfBullet(3));
@@ -17,19 +17,19 @@ public class BulletMechanics : MonoBehaviour
     }
 
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.GetType() != typeof(SphereCollider))
         {
             BulletBehavior.Takeobj(gameObject);
         }
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
+
         if(collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<EnemyBehavior>().TakeDamage(Bulldmg, Bulleffect);
         }
 
-        
     }
 
     IEnumerator GetRidOfBullet(int timer)

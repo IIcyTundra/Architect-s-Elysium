@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3322687139172178304}
   - component: {fileID: 4344596490501177694}
   - component: {fileID: 3713385436274089467}
-  - component: {fileID: 4327530203464885059}
   m_Layer: 6
   m_Name: Durendal
   m_TagString: Untagged
@@ -149,23 +148,6 @@ MonoBehaviour:
   PlayerCam: {fileID: 0}
   GunDir: {fileID: 0}
   allowInvoke: 1
---- !u!114 &4327530203464885059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400815416827297345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d2f8a21754994e47a355cfa040a3492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectsList:
-  - obj: {fileID: 2552278129533104966, guid: 2d527109856d98945bb201c58e47c3b2, type: 3}
-    numberObjects: 10
-  - obj: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
-    numberObjects: 1
 --- !u!1 &2172498302819416569
 GameObject:
   m_ObjectHideFlags: 0

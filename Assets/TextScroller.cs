@@ -10,17 +10,25 @@ public class TextScroller : MonoBehaviour
     public GameObject[] text;
     public AudioSource EtherealSpeak;
     public Animator transition;
-    int j = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         EtherealSpeak = GetComponent<AudioSource>();
     }
+
+
+     public void SkipIntro()
+     {
+          StartCoroutine(LoadMM());
+     }
 
     void Update()
     {
         Debug.Log(EtherealSpeak.time);
-       if(EtherealSpeak.time >= 2.3f && EtherealSpeak.time < 7f)
+       if(EtherealSpeak.time >= 2.5f && EtherealSpeak.time < 7f)
        {
             text[0].SetActive(false);
             text[1].SetActive(true);
@@ -47,6 +55,7 @@ public class TextScroller : MonoBehaviour
        }
        if(!EtherealSpeak.isPlaying)
        {
+            
             StartCoroutine(LoadMM());
        }
        

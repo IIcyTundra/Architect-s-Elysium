@@ -44,16 +44,16 @@ public class Player3D_Controller : MonoBehaviour
     public float MaxSlideTime; 
     public float SlideForce;
     public float SlideTimer;
-    public float CurrHealth;
+
 
     #endregion
 
     private void Start()
     {
+        PlayerDataRef.Health = 100;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         CanJump = true;
-        CurrHealth = PlayerDataRef.Health;
         ccP = GetComponent<CapsuleCollider>();
         
     }
@@ -95,7 +95,7 @@ public class Player3D_Controller : MonoBehaviour
 
         if(Input.GetKey(JumpKey) && CanJump && grounded)
         {
-            Debug.Log("Jumping");
+            //Debug.Log("Jumping");
             CanJump = false;
             Jump();
             Invoke(nameof(ResetJump),PlayerDataRef.JumpCooldown);

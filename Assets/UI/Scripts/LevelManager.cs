@@ -9,15 +9,13 @@ public class LevelManager : MonoBehaviour
     AudioSource Level_Music;
     GameObject[] EnemiesInLevel;
 
-    public Player3D_Controller pHealth;
+    public Player_SO PS0_ref;
 
     public TextMeshProUGUI EnemiesLeft;
 
     // Start is called before the first frame update
     void Start()
     {
-        Level_Music = GetComponent<AudioSource>();
-        Level_Music.Play();
         EnemiesInLevel = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
@@ -26,7 +24,7 @@ public class LevelManager : MonoBehaviour
     {
         EnemiesInLevel = GameObject.FindGameObjectsWithTag("Enemy");
         //Debug.Log(EnemiesInLevel.Length);
-        EnemiesLeft.SetText("Enemies Left:" + EnemiesInLevel.Length);
+        EnemiesLeft.SetText("Enemies Left: " + EnemiesInLevel.Length);
         lvlSucess();
     }
 
@@ -35,11 +33,22 @@ public class LevelManager : MonoBehaviour
     {
         if(EnemiesInLevel.Length == 0)
         {
-            SceneManager.LoadScene(0);
+            if(SceneManager.GetActiveScene().buildIndex != 4)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+            else if(SceneManager.GetActiveScene().buildIndex == 4)
+                SceneManager.LoadScene(0);
         }
-        else if(pHealth.CurrHealth <=0)
+        else if(PS0_ref.Health <=0)
         {
-            SceneManager.LoadScene(0);
+           StartCoroutine(BTM(2f));
         }
+        
+    }
+
+
+    IEnumerator BTM (float timer)
+    {
+        yield return new WaitForSeconds(timer);
+        SceneManager.LoadScene(1);
     }
 }
