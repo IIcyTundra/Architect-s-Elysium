@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
-    public MM_CamController CamRef;
 
     public GameObject[] ScreenChange;
     public AudioClip[] BttnSound;
@@ -13,10 +13,11 @@ public class MainMenu : MonoBehaviour
     public AudioClip[] VoiceLines;
     void Start()
     {
+        
         AP = GetComponent<AudioSource>();
         ST = GameObject.Find("SoundTest").GetComponentInChildren<AudioSource>();
         Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
+        //Cursor.visible = true;
         ScreenChange[0].SetActive(true);
         ScreenChange[1].SetActive(false);
         ScreenChange[2].SetActive(false);

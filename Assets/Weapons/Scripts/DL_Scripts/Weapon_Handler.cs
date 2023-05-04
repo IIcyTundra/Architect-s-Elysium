@@ -48,7 +48,7 @@ public class Weapon_Handler : MonoBehaviour
         if (W_Ref.FullAutoToggle) shooting = Input.GetKey(KeyCode.Mouse0);
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if (RTS && shooting && W_Ref.W_Ammo_Capacity > 0)
+        if (RTS && shooting && BulletsLeft > 0)
         {
             BulletsShot = 0;
 

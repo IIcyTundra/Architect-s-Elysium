@@ -40,7 +40,8 @@ public class LevelManager : MonoBehaviour
         }
         else if(PS0_ref.Health <=0)
         {
-           StartCoroutine(BTM(2f));
+            
+           StartCoroutine(BTM(1f));
         }
         
     }
@@ -48,6 +49,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator BTM (float timer)
     {
+        //Destroy(GameObject.Find("Player"));
         yield return new WaitForSeconds(timer);
         SceneManager.LoadScene(1);
     }
