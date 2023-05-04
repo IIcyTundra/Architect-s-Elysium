@@ -51,6 +51,6 @@ public class LevelManager : MonoBehaviour
     {
         //Destroy(GameObject.Find("Player"));
         yield return new WaitForSeconds(timer);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
