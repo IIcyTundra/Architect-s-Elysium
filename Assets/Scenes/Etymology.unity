@@ -20743,6 +20743,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5537778850102067954, guid: b044cd0ea92d74346a4010407863f953, type: 3}
+      propertyPath: PS0_ref
+      value: 
+      objectReference: {fileID: 11400000, guid: d4ca216fa8d8ca84aa569136f5823a51, type: 2}
+    - target: {fileID: 5537778850102067954, guid: b044cd0ea92d74346a4010407863f953, type: 3}
       propertyPath: pHealth
       value: 
       objectReference: {fileID: 1502041448}
